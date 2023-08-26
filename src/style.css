@@ -12,9 +12,10 @@
   align-items: baseline;
   margin-left: 30vw;
   width: 40vw;
-  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3),
-  5px 5px 10px rgba(0, 0, 0, 0.3),
-  0 10px 15px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    -5px 5px 10px rgba(0, 0, 0, 0.3),
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 article {
@@ -117,11 +118,13 @@ i.fa-solid.fa-ellipsis-vertical {
   padding-left: 330px;
   font-size: 14px;
 }
-.solo-task{
+
+.solo-task {
   padding-left: 16px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-i.fa-solid.fa-arrows-rotate{
+
+i.fa-solid.fa-arrows-rotate {
   padding-right: 18px;
 }
