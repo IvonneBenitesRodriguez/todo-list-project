@@ -1,10 +1,9 @@
-
 import {
   addClearCompletedEventListener,
-  displayUserInput
+  displayUserInput,
 } from './print.js';
 
-import {tasks, createTaskListItem } from './tasks.js';
+import { tasks, createTaskListItem } from './tasks.js';
 
 import './style.css';
 
