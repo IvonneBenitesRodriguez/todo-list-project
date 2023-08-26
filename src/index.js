@@ -1,13 +1,16 @@
-// import _ from 'lodash';
+
 import {
   addClearCompletedEventListener,
-  displayUserInput,
+  displayUserInput
 } from './print.js';
+
+import {tasks, createTaskListItem } from './tasks.js';
 
 import './style.css';
 
 const taskInput = document.getElementById('task');
 const clearCompletedButton = document.getElementById('btn-clear-completed');
+const outputList = document.getElementById('outputList');
 
 taskInput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
@@ -19,6 +22,11 @@ taskInput.addEventListener('keydown', (event) => {
 });
 
 window.addEventListener('load', () => {
-  // renderTask();
+  tasks.forEach((task) => {
+    const listItem = createTaskListItem(task);
+    // listItem.createEllipsisIcon(task);
+    outputList.appendChild(listItem);
+  });
+
   addClearCompletedEventListener(clearCompletedButton);
 });
