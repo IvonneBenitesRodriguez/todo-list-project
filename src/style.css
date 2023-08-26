@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: gray;
-}
-
 .list {
   background-color: #fff;
   margin-top: 5vh;
@@ -16,6 +12,9 @@ body {
   align-items: baseline;
   margin-left: 30vw;
   width: 40vw;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3),
+  5px 5px 10px rgba(0, 0, 0, 0.3),
+  0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 article {
@@ -25,18 +24,20 @@ article {
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
-  height: 10vh;
-  border-bottom: 1px solid gray;
+  height: 5vh;
+  border-bottom: 1px solid #c6c6c6;
+  color: #393e46;
 }
 
 form {
   display: flex;
   flex-direction: row;
   padding-right: 10px;
-  gap: 60%;
+  gap: 22%;
   padding-top: 10px;
   width: 100%;
   height: 6vh;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 input[type=text]#task {
@@ -44,17 +45,20 @@ input[type=text]#task {
   padding-right: 20px;
   padding-left: 20px;
   margin-left: 20px;
-  height: 10px;
+  height: 20px;
   width: 100%;
-}
-
-input[type=text]#task:focus {
-  height: 5vh;
+  font-style: italic;
   outline: none;
 }
 
+input[type=text]#task:focus {
+  height: 2vh;
+}
+
 i.fa-solid.fa-arrow-left {
-  margin-right: 54px;
+  margin-right: 44px;
+  color: #393e46;
+  padding-right: 10px;
 }
 
 .btn-clear {
@@ -66,7 +70,8 @@ input#btn-clear-completed {
   width: 100%;
   padding: 13px;
   border: none;
-  color: gray;
+  background-color: #f6f6f6;
+  color: #6f7777;
 }
 
 li {
@@ -109,6 +114,14 @@ p.titleApp {
 }
 
 i.fa-solid.fa-ellipsis-vertical {
-  padding-left: 200px;
+  padding-left: 330px;
   font-size: 14px;
+}
+.solo-task{
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+i.fa-solid.fa-arrows-rotate{
+  padding-right: 18px;
 }
