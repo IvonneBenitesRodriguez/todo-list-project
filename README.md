@@ -96,7 +96,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/IvonneBenitesRodriguez/capstone-project
+  git clone git@github.com:myaccount/IvonneBenitesRodriguez/todo-list-project
 ```
 
 Create a featured branch besides main branch :
