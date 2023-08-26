@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  background-color: #fff;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 30vw;
+  width: 40vw;
+  box-shadow:
+    -5px 5px 10px rgba(0, 0, 0, 0.3),
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 52%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: 5vh;
+  border-bottom: 1px solid #c6c6c6;
+  color: #393e46;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  gap: 22%;
+  padding-top: 10px;
+  width: 100%;
+  height: 6vh;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+input[type=text]#task {
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  height: 20px;
+  width: 100%;
+  font-style: italic;
+  outline: none;
+}
+
+input[type=text]#task:focus {
+  height: 2vh;
+}
+
+i.fa-solid.fa-arrow-left {
+  margin-right: 44px;
+  color: #393e46;
+  padding-right: 10px;
+}
+
+.btn-clear {
+  color: gray;
+  width: 100%;
+}
+
+input#btn-clear-completed {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background-color: #f6f6f6;
+  color: #6f7777;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  padding-left: 20px;
+  justify-content: space-around;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3vh 1vw 1vh 1vw;
+  border-top: 1px solid #d9dde2;
+  width: 35vw;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-text {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+p.titleApp {
+  padding-left: 20px;
+}
+
+i.fa-solid.fa-ellipsis-vertical {
+  padding-left: 330px;
+  font-size: 14px;
+}
+
+.solo-task {
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+i.fa-solid.fa-arrows-rotate {
+  padding-right: 18px;
+}
