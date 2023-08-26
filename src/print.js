@@ -1,4 +1,4 @@
-// const taskInput = document.getElementById('task');
+
 const outputList = document.getElementById('outputList');
 const clearCompletedButton = document.getElementById('btn-clear-completed');
 
