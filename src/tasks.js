@@ -1,10 +1,10 @@
-import { createEllipsisIcon } from "./print";
+import { createEllipsisIcon } from './print.js';
 
 export const tasks = [
   {
     description: 'Go to the market',
     completed: false,
-    index: 0
+    index: 0,
   },
 ];
 
@@ -21,7 +21,6 @@ export function createTaskListItem(task) {
   description.textContent = task.description;
 
   const ellipsisIcon = createEllipsisIcon();
-
 
   listItem.appendChild(checkBox);
   listItem.appendChild(description);
