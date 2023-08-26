@@ -1,21 +1,24 @@
-import _ from 'lodash';
-import printMe from './print.js';
+// import _ from 'lodash';
+import {
+  addClearCompletedEventListener,
+  displayUserInput,
+} from './print.js';
+
 import './style.css';
 
-function component(){
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
+const taskInput = document.getElementById('task');
+const clearCompletedButton = document.getElementById('btn-clear-completed');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], '');
+taskInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    const userInput = taskInput.value;
+    taskInput.value = '';
+    displayUserInput(userInput);
+  }
+});
 
-    element.classList.add('hello');
-
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
-
-    element.appendChild(btn);
-
-    return element;
-}
-
-document.body.appendChild(component());
+window.addEventListener('load', () => {
+  // renderTask();
+  addClearCompletedEventListener(clearCompletedButton);
+});
